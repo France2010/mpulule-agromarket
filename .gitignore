@@ -1,0 +1,30 @@
+# === Secrets — NEVER commit ===
+config.local.php
+.env
+*.env
+
+# === Logs (may contain payment data) ===
+*.log
+anypay_*.log
+
+# === Uploads (keep folder, ignore files) ===
+/uploads/*
+!/uploads/.gitkeep
+
+# === Backups ===
+*.sql.bak
+*.zip
+*.rar
+
+# === Vendor / Dependencies ===
+/vendor/
+node_modules/
+composer.lock
+
+# === OS ===
+.DS_Store
+Thumbs.db
+
+# === Editors ===
+.vscode/
+.idea/
